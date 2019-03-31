@@ -1,12 +1,18 @@
 module.exports = {
   mode: "development",
-  entry: "./src/index.tsx",
+  entry:　{
+    bundle: "./src/index.tsx",
+    sw: "./src/serviceWorker/sw.ts"
+  },
   output: {
     path: __dirname + '/dist',
-    filename: "bundle.js"
+    filename: "[name].js"
   },
   resolve: {
-    extensions: [".ts", ".tsx", ".js", ".json"]
+    extensions: [".ts", ".tsx", ".js", ".json"],
+    alias: {
+      'react-native$': 'react-native-web'
+    }
   },
   module: {
     rules: [
