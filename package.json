@@ -1,0 +1,33 @@
+{
+  "name": "react-native-web-pwa-practice",
+  "version": "0.1.0",
+  "description": "pwa using react native web from scratch",
+  "main": "index.js",
+  "author": "kneegorilla",
+  "license": "MIT",
+  "scripts": {
+    "type-check": "tsc",
+    "build": "webpack",
+    "build:watch": "webpack --watch",
+    "start": "webpack-dev-server"
+  },
+  "dependencies": {
+    "@types/node": "^11.12.2",
+    "@types/react": "^16.8.10",
+    "@types/react-dom": "^16.8.3",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.3.3",
+    "babel-loader": "^8.0.5",
+    "source-map-loader": "^0.2.4",
+    "typescript": "^3.4.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
+  }
+}
