@@ -7,10 +7,19 @@ const Button: React.FC<{}> = () => {
       backgroundColor: 'blue',
     }
   })
+
+  const onPress = () => {
+    fetch('http://localhost:3000')
+    .then(res => console.log(res))
+    .catch(err => console.log(err))
+  }
+
   return (
     <View>
       <Text>React Native Web</Text>
-      <TouchableOpacity>
+      <TouchableOpacity
+        onPress={onPress}
+      >
         <View
           style={styles.button}
         >
